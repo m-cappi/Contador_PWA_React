@@ -11,7 +11,7 @@ const CACHE_ELEMENTS = [
     "./index.js",
 ];
 
-const CACHE_NAME = "v4_cache_contador_react";
+const CACHE_NAME = "v5_cache_contador_react";
 
 //const self = this
 
@@ -57,7 +57,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
         caches.match(event.request).then((res) => {
             //console.log(res);
-            return (res ? res : fetch(event.request))
+            return res ? res : fetch(event.request);
             // if (res){
             //     return res
             // }
