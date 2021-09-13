@@ -1,7 +1,7 @@
 /** @format */
 
 const Contador = () => {
-    const [contador, setContador] = React.useState(0);
+    const [contador, setContador] = React.useState(3);
     const aumentar = () => setContador(contador + 1);
     const disminuir = () => setContador(contador - 1);
 
